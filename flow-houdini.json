@@ -1,0 +1,10 @@
+{
+    "enable": true,
+    "env": [
+        {
+            "var": "Flow",
+            "value": "C:/Users/$USER/Documents/houdini20.5/packages/flow-houdini"
+        }
+    ],
+    "path": "$Flow"
+}
