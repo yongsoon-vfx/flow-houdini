@@ -1,50 +1,99 @@
 [sop]
 
 [sop.t]
-action = "createnode"
-param = "xform"
-pre = ""
-post = ""
+event = "createNode"
+node_name = "xform"
+
 
 [sop.w]
-action = "createnode"
-param = "attribwrangle"
-pre = ""
-post = ""
+event= "createNode"
+node_name = "attribwrangle"
 
 [sop.b]
-action = "createnode"
-param = "blast"
+event= "createNode"
+node_name = "blast"
 
 [sop.m]
-action = "createnode"
-param = "merge"
+event= "createNode"
+node_name = "merge"
 
 [sop.n]
-action = "createnode"
-param = "null"
+event= "createNode"
+node_name = "null"
 
 [sop.g]
-action = "createnode"
-param = "groupcreate"
+event= "createNode"
+node_name = "groupcreate"
 
-[sop.d]
-action = "testing"
+
+[sop.shift_y]
+event = "yank"
+action = "copy" 
+
+
+[sop.shift_p]
+event = "yank"
+action = "paste"
+
+[sop.p]
+event ="yank"
 
 [vop]
 
 [vop.b]
-action = "createnode"
-param = "bind"
+event= "createNode"
+node_name = "bind"
 
 [lop]
 
 [lop.t]
-action = "createnode"
-param = "xform"
+event= "createNode"
+node_name = "xform"
 
 [obj]
 
 [obj.g]
-action = "createnode"
-param = "geo"
+event= "createNode"
+node_name = "geo"
+
+[global_]
+
+[global.1]
+event = "nodeSwitch"
+action = "set"
+
+[global.2]
+event = "nodeSwitch"
+action = "set"
+
+[global.3]
+event = "nodeSwitch"
+action = "set"
+
+[global.4]
+event = "nodeSwitch"
+action = "set"
+
+[global.5]
+event = "nodeSwitch"
+action = "set"
+
+[global.shift_1]
+event = "nodeSwitch"
+action = "save"
+
+[global.shift_2]
+event = "nodeSwitch"
+action = "save"
+
+[global.shift_3]
+event = "nodeSwitch"
+action = "save"
+
+[global.shift_4]
+event = "nodeSwitch"
+action = "save"
+
+[global.shift_5]
+event = "nodeSwitch"
+action = "save"
